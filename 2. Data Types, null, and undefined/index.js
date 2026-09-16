@@ -1,5 +1,6 @@
 const name = "Natalja";
 console.log(name);
+// typeof näitab, mis tüüpi väärtusega on tegemist
 console.log(typeof name);
 
 const age = 20;
@@ -35,11 +36,14 @@ console.log(typeof true);
 console.log(typeof {});
 console.log(typeof []);
 
+// undefined tähendab, et muutujale pole veel väärtust määratud
 let username;
 
 console.log(username);
 console.log(typeof username);
 
+// null tähendab, et väärtus on teadlikult tühi
+// Eripära: typeof null tagastab "object"
 const value = null;
 
 console.log(value);
@@ -55,6 +59,8 @@ console.log("5" === 5);
 console.log("5" === "5");
 console.log(5 === 5);
 
+// Eripära: typeof [] tagastab samuti "object"
+// Array kontrollimiseks kasutatakse Array.isArray()
 const numbers = [1, 2, 3];
 
 console.log(typeof numbers);

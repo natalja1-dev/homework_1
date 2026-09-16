@@ -14,7 +14,8 @@ score = score + 5;
 console.log("Punktid:", score);
 
 
-// block scope
+// Block scope – { } sees loodud const ja let muutujad
+// on kättesaadavad ainult selle ploki sees
 if (score >= 10) {
     const message = "Tubli tulemus!";
     let result = 5;
@@ -24,7 +25,8 @@ if (score >= 10) {
 }
 
 
-// var ei ole block scoped
+// Vanemas JavaScripti koodis kasutatakse var,
+// sest let ja const lisati keelde hiljem
 if (true) {
     var oldVariable = "Olen var muutuja";
 }

@@ -1,3 +1,4 @@
+// Function expression – funktsioon salvestatakse muutujasse
 const greet = function (name) {
     return `Hello, ${name}!`;
 };

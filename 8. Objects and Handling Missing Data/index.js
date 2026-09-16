@@ -1,3 +1,4 @@
+// Objekti loomine omaduste ja väärtustega
 const user = {
     name: "Natalja",
     age: 25,
@@ -6,24 +7,30 @@ const user = {
     }
 };
 
+// Omaduste lugemine dot ja bracket notation abil
 console.log(user.name);
 console.log(user["age"]);
 
 user.email = "natalja@example.com"; // uued omadused
 user.age = 26; // uus vanus
 
+
 console.log(user.email);
 console.log(user.age);
 
+// Nested objekti omaduse lugemine
 console.log(user.address.city);
 
 console.log(user.phone); // määramata
 
+// ?. abil saab nested omadust turvaliselt lugeda
 console.log(user.contact?.phone); // määramata
 
+// ?? annab vaikimisi väärtuse ainult siis, kui väärtus on null või undefined
 const phone = user.contact?.phone ?? "No phone number";
 console.log(phone);
 
+// ?? ja || käituvad erinevalt väärtustega 0, false ja ""
 const score = 0;
 const isAdmin = false;
 const nickname = "";
@@ -37,6 +44,7 @@ console.log(isAdmin || true);    // true
 console.log(nickname ?? "Guest"); // ""
 console.log(nickname || "Guest"); // "Guest"
 
+// Kasutaja profiili kuvamine koos puuduva info käsitlemisega
 const profile = {
     name: "Natalja",
     age: null,
